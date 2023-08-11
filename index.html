@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>CSS/CSS3 Basics</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
 
     <script>
@@ -10,7 +11,7 @@
 
 
       function selected(x){
-        //document.getElementById(x).style.backgroundColor = "blue";
+        
         //document.querySelector(".example").style.backgroundColor = "red";
         var e = document.getElementById(x);
         if (e.style.backgroundColor == "blue") {
@@ -32,6 +33,10 @@
   <body >
     <h1 class="headTitle">John Wick: Chapter 4 <span class="time">17:40</span></h1>
     <span id="curentTime">444</span>
+    <h2>version</h2>
+    <span id="telegramTestText"></span>
+    <h2>platform</h2>
+    <span id="telegramTestText2"></span>
 
     <div>
       1
@@ -186,4 +191,12 @@
 333333
 </p>
   </body>
+
+  <script>
+var tgVersion = document.getElementById("telegramTestText");
+var tgPlatform = document.getElementById("telegramTestText2");
+
+tgVersion.textContent = window.Telegram.WebApp.version;
+tgPlatform.textContent = window.Telegram.WebApp.platform;
+    </script>
 </html>
