@@ -1,51 +1,189 @@
-<!doctype html>
-<html>
-<head>
-<meta charset=utf-8>
-<title>практикум по Джава,ЦСС и ХТМЛ</title>
-    <!--juzaem "DIV" i sozdaiom "CLASS" takrze stilizuem ego czerez teg "STYLE" -->
-	<style type="text/css">
- .perwszy { color: #3399ff; }
-   </style>
-</head>
-<body style="background-color:#505050; color:#fd8;"> <!--Telo HTML dokumenta w kotorom soderżytsa wsio czto widit polzowatel-->
-   <center> 
-<h1 style="color: #fd0;">Priwetik , eto soderrzatelnyj praktikum po "HTML" "JavaScript" i "CSS"</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS/CSS3 Basics</title>
+    <link rel="stylesheet" href="css/styles.css" />
 
-<div class="perwszy"><h1>Приветик в заголовке №1</h1>
-<h2>Приветик в заголовке №2 </h2>
-<h3>Приветик в заголовке №3 </h3>
-<h4>Приветик в заголовке №4 </h4>
-<h5>Приветик в заголовке №5 </h5>
-<h6>Приветик в заголовке №6 </h6>
-</div>
-
-<a href="https://www.w3schools.com/tags/default.asp" title="dobrze slowak po HTML" style="color: #e19200; font-Size: 30px;">Sprawocznik po HTML</a>
-</br>
-<a style="color: #fd0; font-Size: 2.5em;" href="http://www.wisdomweb.ru/JS/javascript-first.php">JavaScript</a>
- 
-   </center>
-</body>
-<script>
-
-var
-plus=1+1,
-minus=0-10+5,
-boll=true,
-text='приветик я значение из переменной';
-
-//alert (plus +" "+ minus);
-//alert (text);
-
-var name= prompt("Привет введи предпоологаемое число:","сюда");
-
-if (name==1) { alert ("Ты угадал!"); }
-else { alert ("Ты не угадал..."); }
-
-</script>
-
-<center><img src="http://www.ote4estvo.ru/uploads/posts/2017-04/osnovnye-tipy-slovarey.jpeg"></center>
+    <script>
 
 
 
+      function selected(x){
+        //document.getElementById(x).style.backgroundColor = "blue";
+        //document.querySelector(".example").style.backgroundColor = "red";
+        var e = document.getElementById(x);
+        if (e.style.backgroundColor == "blue") {
+          e.style.backgroundColor = "rgb(32, 144, 12)";
+          e.style.color = "black";
+        }
+        else {
+          e.style.backgroundColor = "blue";
+          e.style.color = "white";
+        };
+
+
+      }
+
+      </script>
+
+  </head>
+
+  <body >
+    <h1 class="headTitle">John Wick: Chapter 4 <span class="time">17:40</span></h1>
+    <span id="curentTime">444</span>
+
+    <div>
+      1
+      <div class="example" id="place1" onclick="selected('place1')"><h1>1</h1></div>
+      <div class="example" id="place2" onclick="selected('place2')"><h1>2</h1></div>
+      <div class="example" id="place3" onclick="selected('place3')"><h1>3</h1></div>
+      <div class="example" id="place4" onclick="selected('place4')"><h1>4</h1></div>
+      <div class="example" id="place5" onclick="selected('place5')"><h1>5</h1></div>
+      <div class="example" id="place6" onclick="selected('place6')"><h1>6</h1></div>
+      <div class="example" id="place7" onclick="selected('place7')"><h1>7</h1></div>
+      <div class="example" id="place8" onclick="selected('place8')"><h1>8</h1></div>
+      <div class="example" id="place9" onclick="selected('place9')"><h1>9</h1></div>
+      <div class="example" id="place10" onclick="selected('place10')"><h1>10</h1></div>
+      <div class="example" id="place11" onclick="selected('place11')"><h1>11</h1></div>
+      <div class="example" id="place12" onclick="selected('place12')"><h1>12</h1></div>
+      <div class="example" id="place13" onclick="selected('place13')"><h1>13</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place16" onclick="selected('place16')"><h1>16</h1></div>
+      <div class="example" id="place17" onclick="selected('place17')"><h1>17</h1></div>
+      <div class="example" id="place18" onclick="selected('place18')"><h1>18</h1></div>
+      <div class="example" id="place19" onclick="selected('place19')"><h1>19</h1></div>
+      <div class="example" id="place20" onclick="selected('place20')"><h1>20</h1></div>
+      <div class="example" id="place21" onclick="selected('place21')"><h1>21</h1></div>
+      <div class="example" id="place22" onclick="selected('place22')"><h1>22</h1></div>
+      <div class="example" id="place23" onclick="selected('place23')"><h1>23</h1></div>
+      <div class="example" id="place24" onclick="selected('place24')"><h1>24</h1></div>
+      <div class="example" id="place25" onclick="selected('place25')"><h1>25</h1></div>
+      <div class="example" id="place26" onclick="selected('place26')"><h1>26</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>27</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>28</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>29</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>30</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>31</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>32</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>33</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>34</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>35</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>36</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>37</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>38</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>39</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>40</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>41</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>42</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>43</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>44</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>45</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>46</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>47</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>48</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>49</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>50</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>51</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>52</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>53</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>54</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>55</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>56</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>57</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>58</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>59</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>60</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>61</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>62</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>63</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>64</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>65</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>66</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>67</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>68</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>69</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>70</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+      <div class="example" id="place14" onclick="selected('place14')"><h1>14</h1></div>
+      <div class="example" id="place15" onclick="selected('place15')"><h1>15</h1></div>
+
+      </div>
+
+<p>123
+333333
+</p>
+  </body>
 </html>

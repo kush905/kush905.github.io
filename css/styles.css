@@ -1,0 +1,75 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  max-height: 900px;
+  display: block;
+  max-block-size: 900px;
+  justify-content: center;
+  align-items: center;
+  background-color: dimgrey;
+  position: relative;
+}
+
+.container1 {
+	position: relative;
+}
+
+
+.headTitle {
+  text-align: center; 
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+}
+
+.time{
+  color: rgb(219, 253, 24);
+  font-size: 50px;
+  display: inline-block;
+}
+
+
+.example h1 {
+  font-size: 35px;
+  align-content: center;
+  /*color: rgb(247, 221, 161);*/
+}
+#curentTime {
+  font-size: 35px;
+  color: azure;
+  align-content: center;
+}
+
+.example {
+  border: 2px solid black;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(32, 144, 12);
+  display:inline-block;
+  border-radius: 20px;
+  column-count: 8;
+  bottom: 50px;
+  /* transition-duration: 500ms, 2s;
+  transition-property: transform, background-color;
+  transition-delay: 0, 10s;
+  transition-timing-function: linear; */
+
+  transition: all 100ms ease ;
+}
+
+.example:hover {
+  background-color: yellow;
+  transform: scale(1.2);
+  border-radius:  20px;
+}
+
+.example:active{
+  background-color: rgb(0, 170, 255);
+  transform: scale(0.9);
+  border-style: dotted;
+  border-radius: 10px;
+}
+
+.redd #place1 {
+  background-color: crimson;
+}
